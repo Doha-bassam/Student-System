@@ -1,0 +1,26 @@
+﻿@model WebApplication3.Models.Student
+
+<h2>Add Student</h2>
+
+<form asp-action="Create">
+
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Major</label>
+        <input asp-for="Major" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>GPA</label>
+        <input asp-for="GPA" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Save
+    </button>
+
+</form>

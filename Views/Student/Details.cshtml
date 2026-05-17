@@ -1,0 +1,26 @@
+﻿@model WebApplication3.Models.Student
+
+<h2>Student Details</h2>
+
+<div class="card p-3">
+
+    <h4>Name:</h4>
+    <p>@Model.Name</p>
+
+    <h4>Major:</h4>
+    <p>@Model.Major</p>
+
+    <h4>GPA:</h4>
+    <p>@Model.GPA</p>
+
+</div>
+
+<br />
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+    Edit
+</a>
+
+<a asp-action="Index" class="btn btn-secondary">
+    Back
+</a>
